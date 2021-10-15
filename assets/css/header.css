@@ -1,0 +1,63 @@
+.main-header {
+    width: 100vw;
+    height: 64px;
+    background-color: var(--primary-green);
+    border: 3px solid var(--gray-1);
+    padding: 0px 312px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-header .logo-section {
+    width: 277px;
+}
+.main-header .logo-section img {
+    margin-top: -3px;
+}
+.nav-container {
+    height: 100%;
+}
+.nav-container ul,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--gray-1);
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 665px;
+    height: 100%;
+}
+
+.nav-list li {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li:hover {
+    background-color: var(--primary-yellow);
+    border-left: 3px solid var(--gray-1);
+    border-right: 3px solid var(--gray-1);
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.nav-list .active {
+    background-color: var(--primary-yellow);
+    border-left: 3px solid var(--gray-1);
+    border-right: 3px solid var(--gray-1);
+    padding-left: 13px;
+    padding-right: 13px;
+}

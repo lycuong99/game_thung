@@ -1,0 +1,26 @@
+/* font-family: 'IBM Plex Mono', monospace;
+font-family: 'Work Sans', sans-serif; */
+
+:root{
+    --primary-green: #81C046;
+    --primary-yellow: #FCCF03;
+
+    --secondary-red: #DE482B;
+    --secondary-blue: #3B77BC;
+    --secondary-pink-light: #FBDEE2;
+    --secondary-cyan-light: #2E2D2C;
+    --secondary-yellow-light1: #EFEDD8;
+    --secondary-yellow-light2: #FFF7C4;
+    
+    --gray-1: #212120;
+    --gray-2: #2E2D2C;
+    --gray-3: #5F5F5D;
+    --gray-4: #B3B3AF;
+    --gray-5: #DDDCD8;
+    --gray-6: #F6F5F0;
+  }
+
+  html *{
+    box-sizing: border-box;
+    margin:0;
+  }
