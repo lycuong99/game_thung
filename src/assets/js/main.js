@@ -15,6 +15,17 @@ $(document).ready(function () {
 
     // );
 
+    $('#nav-menu-button').click(function (e) {
+        // e.preventDefault();
+
+        if ($('#main-navbar').css('display') == 'none') {
+            $('#main-navbar').addClass('show');
+
+        } else {
+            $('#main-navbar').removeClass('show');
+        }
+    });
+
     $.fn.isInViewport = function () {
         var elementTop = $(this).offset().top;
         var elementBottom = elementTop + $(this).outerHeight();
@@ -31,9 +42,8 @@ $(document).ready(function () {
 
     $(window).on('resize', function () {
 
-        if ($("#the-loai-menu")
-            .prop('scrollWidth') > $("#the-loai-menu").width()) {
-           console.log('SHOW');
+        if ($(window).width() > 1000) {
+            $('#main-navbar').removeClass('show');
         }
     });
 })

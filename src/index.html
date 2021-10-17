@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
@@ -33,7 +34,7 @@
             <img src="./assets/images/logo01.svg" alt="GameThung Logo"
           /></a>
         </div>
-        <nav class="nav-container">
+        <nav class="nav-container" id="main-navbar">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#"><span> Nổi bật </span></a>
@@ -90,13 +91,62 @@
             </li>
           </ul>
         </nav>
-        <nav class="nav-container-mobile">
-          <a href="#">
-            <img src="./assets/images/menu-icon-small.svg" />
-          </a>
-        </nav>
+        <button class="nav-container-mobile" id="nav-menu-button">
+          <img src="./assets/images/menu-icon-small.svg" />
+        </button>
       </div>
     </header>
+
+    <footer>
+      <div class="container">
+        <div class="logosection">
+          <a href="/">
+            <img src="./assets/images/logo02.svg" alt="GameThung Logo"
+          /></a>
+        </div>
+        <div class="information-section">
+          <div class="web-info">
+            <div class="subtitle1">Về trang web này</div>
+            <div class="body2">
+              Đây là một trang web be bé cung cấp những vài viết nho nhỏ về
+              những tựa game kinh điển mà thế hệ 8x - 9x - 10x đã từng chơi qua.
+              Chúng là một phần tuổi thơ ai đó trong số chúng ta mà nhỉ?
+            </div>
+          </div>
+          <div class="group-info">
+            <div class="subtitle1">Về chúng tớ</div>
+            <div class="group-info-content">
+              <div class="label1">Nhombanguoi.</div>
+              <ul class="member-list-info">
+                <li>
+                  <span class="caption1">Design by</span>
+                  <div class="body2">Lộc Nguyễn</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Hoàn Bùi</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Tuấn Nguyễn</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper">
+          <ul>
+            <li class="label1">Điều khoản</li>
+            <li class="label1">Chính sách</li>
+            <li class="label1">Trợ giúp</li>
+          </ul>
+          <p>
+            Trang Web nay chỉ sử dụng cho mục đích học tâp. Bản quyền trang web
+            này thuộc về nhombanguoi. chúng tớ nhá!
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
