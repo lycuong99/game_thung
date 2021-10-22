@@ -1,0 +1,162 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="/">
+            <img src="./assets/images/logo01.svg" alt="GameThung Logo"
+          /></a>
+        </div>
+        <nav class="nav-container" id="main-navbar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#"><span> Nổi bật </span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><span>Bài Mới</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle"><span>Thể loại </span></button>
+              <ul class="dropdown-menu first-dropdown">
+                <li class="dropdown-item dropdown">
+                  <span class="dropdown-item-content">
+                    <span>Theo thể loại</span>
+                    <span class="dropdown-item-icon">
+                      <img src="./assets/images/right-chevron.svg" /></span
+                  ></span>
+                  <ul class="dropdown-menu second-dropdown" id="the-loai-menu">
+                    <li class="dropdown-item">PlayStation 1</li>
+                    <li class="dropdown-item">Hệ máy NES</li>
+                    <li class="dropdown-item">Máy tính PC</li>
+                    <li class="dropdown-item">Máy Gameboy</li>
+                    <li class="dropdown-item">Nintendo DS</li>
+                    <li class="dropdown-item">Máy PSP</li>
+                  </ul>
+                </li>
+                <li class="dropdown-item dropdown">
+                  <span class="dropdown-item-content">
+                    <span>Theo hệ máy</span>
+                    <span class="dropdown-item-icon"
+                      ><img src="./assets/images/right-chevron.svg"
+                    /></span>
+                  </span>
+                  <ul class="dropdown-menu second-dropdown">
+                    <li class="dropdown-item">XBOX</li>
+                    <li class="dropdown-item">Hệ máy NES</li>
+                    <li class="dropdown-item">Máy tính PC</li>
+                    <li class="dropdown-item">Máy Gameboy</li>
+                    <li class="dropdown-item">Nintendo DS</li>
+                    <li class="dropdown-item">Máy PSP</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item active">
+              <a href="#"><span>Tên tuổi </span></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" style="vertical-align: baseline"
+                ><img src="./assets/images/search-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-container-mobile" id="nav-menu-button">
+          <img src="./assets/images/menu-icon-small.svg" />
+        </button>
+      </div>
+    </header>
+
+    <footer>
+      <div class="container">
+        <div class="logosection">
+          <a href="/">
+            <img src="./assets/images/logo02.svg" alt="GameThung Logo"
+          /></a>
+        </div>
+        <div class="information-section">
+          <div class="web-info">
+            <div class="subtitle1">Về trang web này</div>
+            <div class="body2">
+              Đây là một trang web be bé cung cấp những vài viết nho nhỏ về
+              những tựa game kinh điển mà thế hệ 8x - 9x - 10x đã từng chơi qua.
+              Chúng là một phần tuổi thơ ai đó trong số chúng ta mà nhỉ?
+            </div>
+          </div>
+          <div class="group-info">
+            <div class="subtitle1">Về chúng tớ</div>
+            <div class="group-info-content">
+              <div class="label1">Nhombanguoi.</div>
+              <ul class="member-list-info">
+                <li>
+                  <span class="caption1">Design by</span>
+                  <div class="body2">Lộc Nguyễn</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Hoàn Bùi</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Tuấn Nguyễn</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper">
+          <ul>
+            <li class="label1">Điều khoản</li>
+            <li class="label1">Chính sách</li>
+            <li class="label1">Trợ giúp</li>
+          </ul>
+          <p>
+            Trang Web nay chỉ sử dụng cho mục đích học tâp. Bản quyền trang web
+            này thuộc về nhombanguoi. chúng tớ nhá!
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

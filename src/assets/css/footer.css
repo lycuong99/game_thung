@@ -1,127 +1,137 @@
 footer {
-    background-color: var(--gray-6);
-    min-height: 440px;
+  background-color: var(--gray-6);
+  min-height: 440px;
 
-    width: 100vw;
-    padding-top: 64px;
-    padding-bottom: 37px;
+  width: 100vw;
+  padding-top: 64px;
+  padding-bottom: 37px;
 }
 footer .logosection {
-    margin-bottom: 49px;
+  margin-bottom: 49px;
 }
 footer .logosection img {
-    /* height: 55px;
+  /* height: 55px;
    width: 235px; */
 }
 footer .container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .copyright-wrapper p {
-    text-align: right;
-    letter-spacing: -0.01em;
-    color: #000000;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 24px;
-    font-family: "IBM Plex Mono", monospace;
+  text-align: right;
+  letter-spacing: -0.01em;
+  color: #000000;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .information-section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .member-list-info {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .copyright-wrapper,
 .copyright-wrapper ul {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 footer ul {
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 .web-info {
-    margin-right: 110px;
-    display: flex;
-    flex-direction: column;
+  margin-right: 110px;
+  display: flex;
+  flex-direction: column;
 }
 .web-info .body2 {
-    max-width: 550px;
+  max-width: 550px;
 }
 
 .copyright-wrapper {
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 64px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
 }
 .copyright-wrapper p {
-    max-width: 453px;
+  max-width: 453px;
 }
 
 /* .group-info .label1{
     margin-bottom: 16px;
 } */
 
-.information-section .subtitle1,.group-info .label1 {
-    margin-bottom: 16px;
+.information-section .subtitle1,
+.group-info .label1 {
+  margin-bottom: 16px;
 }
 
 footer li:not(:last-child) {
-    margin-right: 48px;
+  margin-right: 48px;
 }
 .group-info-content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+  footer {
+    padding-top: 37px;
+    text-align: center;
+  }
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .information-section,
+  .copyright-wrapper {
     display: flex;
     flex-direction: column;
-}
-@media screen and (max-width: 1000px) {
-    footer {
-        padding-top: 37px;
-        text-align: center;
-    }
-    .information-section,
-    .copyright-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    footer .logosection {
-        margin: auto;
-        margin-bottom: 16px;
-    }
-    .web-info {
-        margin-right: 0;
-    }
+  }
 
-    .web-info {
-        align-items: center;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-    .group-info-content {
-        align-items: center;
-    }
+  .copyright-wrapper {
+    flex-direction: column-reverse;
+  }
 
-    .information-section .subtitle1 {
-        margin-bottom: 16px;
-        text-align: center;
-    }
+  footer .logosection {
+    margin: auto;
+    margin-bottom: 16px;
+  }
+  .web-info {
+    margin-right: 0;
+  }
 
-    /* .web-info .body2 {
+  .web-info {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .group-info-content {
+    align-items: center;
+  }
+
+  .information-section .subtitle1 {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  /* .web-info .body2 {
        padding-left: 12px;
        padding-right: 12px;
     } */
-    /* .copyright-wrapper {
-        margin-top: 16px;
-    } */
-    .copyright-wrapper p {
-        text-align: center;
-        margin-top: 16px;
-    }
+  .copyright-wrapper {
+    margin-top: 16px;
+  }
+  .copyright-wrapper p {
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }
