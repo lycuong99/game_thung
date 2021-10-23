@@ -79,5 +79,22 @@ $(document).ready(function () {
         $('.slider-content').slick('slickGoTo', slideno - 1);
     });
 
+    $('#game-type-nav button[data-slide]').click(function (e) {
+        $('#game-type-nav button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.tabs button').click(function (e) {
+        $('.tabs button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.game-type-item').click(function (e) {
+        $('.game-type-item').removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+
     // $('.slick-prev').html(`<img src="assets/images/left-arrow.svg" />`);
 })
