@@ -85,12 +85,35 @@ $(document).ready(function () {
     });
 
     $('.tabs button').click(function (e) {
+        var tabIndex = $(this).data('tab');
+
         $('.tabs button').removeClass('active');
         $(this).addClass('active');
+
+        $(`.tabpanel-item`).removeClass('active');
+        $(`.tabpanel-item[data-tab=${tabIndex}]`).addClass('active');
     });
 
     $('.game-type-item').click(function (e) {
         $('.game-type-item').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.game-item').click(function (e) {
+        var src = $(this).data('img-src');
+        $('.game-item').removeClass('active');
+        $(this).addClass('active');
+
+        $('#tentuoilanggame .window-content .right img').attr('src', src);
+    });
+
+    $('.rank-item').click(function (e) {
+        $('.rank-item').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.news-item').click(function (e) {
+        $('.news-item').removeClass('active');
         $(this).addClass('active');
     });
 
