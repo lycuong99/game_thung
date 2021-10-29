@@ -1,0 +1,80 @@
+/* LIST */
+.baiviet-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+@media screen and (max-width: 1210px) {
+  .baiviet-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .baiviet-list {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}
+
+/* ITEM */
+.baiviet-item {
+  /* max-width: 450px; */
+  cursor: pointer;
+}
+
+.baiviet-item .window-header {
+  background-color: var(--gray-6);
+}
+.baiviet-item.active .window-header {
+  background-color: var(--primary-green);
+}
+
+.baiviet-item .additional-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.baiviet-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.baiviet-item .image img {
+  width: 100%;
+  filter: grayscale(1);
+}
+
+.baiviet-item.active .image img {
+  filter: grayscale(0);
+}
+.baiviet-item .content {
+  padding: 13px 13px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.baiviet-item.active {
+  background-color: var(--secondary-yellow-light1);
+  box-shadow: var(--box-shadow-default);
+}
+.baiviet-item .additional-info .space {
+  flex-grow: 1;
+}
+
+.baiviet-item .additional-info .theloaigame {
+  background-color: var(--primary-yellow);
+  border: 3px solid transparent;
+  padding: 1px 5px;
+}
+.baiviet-item .additional-info .theloaigame.border {
+  border: 3px solid var(--gray-1);
+}
+
+.baiviet-item .additional-info .date {
+  margin-right: 24px;
+}

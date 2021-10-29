@@ -207,3 +207,15 @@ body {
 .window-body {
   background-color: var(--gray-6);
 }
+
+.border {
+  border: var(--border-default);
+}
+
+.mobile-h4-xl {
+  font-family: "IBM Plex Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 32px;
+}

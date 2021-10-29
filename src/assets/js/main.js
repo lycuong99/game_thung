@@ -18,4 +18,14 @@ $(document).ready(function () {
             $('#main-navbar').removeClass('show');
         }
     });
+
+    $("#home_slider").slick({
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow:
+            '<a class="slide-arrow prev-arrow"><i class="bi bi-chevron-left"></i></a>',
+        nextArrow:
+            '<a class="slide-arrow next-arrow"><i class="bi bi-chevron-right"></i></a>',
+    });
 })
