@@ -117,6 +117,13 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    $('.news-item, .rank-item, .game-item, .game-type-item').mouseenter(function () {
+        $(this).addClass('active');
+    }).mouseleave(function () {
+        $(this).removeClass('active');
+    });
+
+    
 
 
     // $('.slick-prev').html(`<img src="assets/images/left-arrow.svg" />`);

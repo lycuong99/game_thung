@@ -1,0 +1,153 @@
+section .container {
+  margin: auto;
+  padding-top: 72px;
+  padding-bottom: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1110px) {
+  section .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.note {
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.Title {
+  margin-bottom: 48px;
+}
+.container > .window > .window-body {
+  padding: 40px 29px 64px;
+}
+@media screen and (max-width: 1110px) {
+  .container > .window {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+  .container > .window > .window-body {
+    padding: 0;
+  }
+  .container > .window .window-header {
+    display: none;
+  }
+}
+.main-content .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 640px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.main-content .content-mobile {
+  display: none;
+}
+.img-container {
+  max-width: 560px;
+  width: 560px;
+  min-width: 420px;
+  display: flex;
+}
+.img-container img {
+  width: 100%;
+}
+@media screen and (max-width: 1110px) {
+  .img-container {
+    display: none;
+  }
+}
+.main-content .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 640px;
+}
+
+@media screen and (max-width: 560px) {
+  .main-content .content {
+    display: none;
+  }
+
+  .tag-related-item:last-child {
+    display: none;
+  }
+
+  .main-content .content-mobile {
+    display: block;
+  }
+
+  .Title {
+    margin-bottom: 24px;
+  }
+}
+
+.main-content .content > .theloaigame {
+  margin-bottom: 24px;
+}
+
+.main-content .content > h2 {
+  margin-bottom: 16px;
+}
+
+.main-content .content p {
+  margin-bottom: 24px;
+}
+.main-content .content p span,
+.main-content .content-mobile p span {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--primary-green);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#btn-xem-them {
+  margin-top: 64px;
+  align-self: center;
+}
+
+footer {
+  background-color: var(--gray-5);
+}
+
+@media screen and (max-width: 810px) {
+  section .container {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .note {
+    margin-top: 0px;
+    margin-bottom: 24px;
+  }
+
+  #btn-xem-them {
+    margin-top: 32px;
+  }
+  .main-content {
+    margin-bottom: 24px;
+  }
+}
+.title-header-mobile {
+  display: none;
+}
+@media screen and (max-width: 560px) {
+  .title-header {
+    display: none;
+  }
+  .title-header-mobile {
+    display: block;
+    margin-bottom: 16px;
+  }
+}

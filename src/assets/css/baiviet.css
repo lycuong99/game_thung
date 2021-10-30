@@ -43,7 +43,11 @@
   flex-direction: column;
   align-items: stretch;
 }
-
+.baiviet-item .image {
+  margin-top: -3px;
+  margin-right: -3px;
+  margin-left: -3px;
+}
 .baiviet-item .image img {
   width: 100%;
   filter: grayscale(1);
@@ -58,9 +62,18 @@
   flex-direction: column;
   gap: 16px;
 }
+@media screen and (max-width: 560px) {
+  .baiviet-item .content p {
+    display: none;
+  }
+}
 .baiviet-item.active {
   background-color: var(--secondary-yellow-light1);
   box-shadow: var(--box-shadow-default);
+}
+.baiviet-item .additional-info{
+ display: flex;
+ align-items: center;
 }
 .baiviet-item .additional-info .space {
   flex-grow: 1;
@@ -77,4 +90,21 @@
 
 .baiviet-item .additional-info .date {
   margin-right: 24px;
+}
+.baiviet-container {
+  display: flex;
+  flex-direction: column;
+}
+.baiviet-container button {
+  align-self: center;
+}
+
+.baiviet-container .title-header {
+  font-family: "IBM Plex Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 32px;
+
+  margin-bottom: 32px;
 }

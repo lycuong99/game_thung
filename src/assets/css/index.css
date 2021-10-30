@@ -295,6 +295,7 @@ main {
   .news-items {
     column-gap: 16px;
     row-gap: 24px;
+    margin-bottom: 24px;
   }
   .news-item-content p {
     display: none;
@@ -328,15 +329,15 @@ main {
 
 .news-nav {
   display: flex;
-  justify-content: center;
-  transform: translateX(264px);
-  gap: 16px;
+  justify-content: flex-end;
+  /* transform: translateX(264px);
+  gap: 16px; */
 }
 @media screen and (max-width: 1223px) {
-  .news-nav {
+  /* .news-nav {
     transform: translateX(0);
     justify-content: center;
-  }
+  } */
 }
 @media screen and (max-width: 1280px) {
   .news-rank {
@@ -346,13 +347,13 @@ main {
 
 @media screen and (max-width: 491px) {
   .news-nav {
-    justify-content: space-between;
-    max-width: 354px;
+    /* justify-content: space-between;
+    max-width: 354px; */
     margin: auto;
   }
 }
 
-@media screen and (max-width: 417px) {
+@media screen and (max-width: 497px) {
   .news-nav {
     justify-content: space-between;
     flex-direction: column;
