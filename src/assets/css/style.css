@@ -164,6 +164,7 @@ main {
   cursor: pointer;
   border-radius: 2px;
   padding: 8px 29px;
+  transition: all 0.25s ease-in-out;
 }
 .btn:hover {
   box-shadow: 8px 8px 0px var(--gray-1);
@@ -253,6 +254,7 @@ body {
   background-color: var(--primary-yellow);
   padding: 4px 8px;
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
 }
 
 .tag-related-item.box-shadow {

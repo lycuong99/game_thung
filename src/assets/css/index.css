@@ -273,6 +273,7 @@ main {
 .news-item img {
   width: 100%;
   filter: grayscale(1);
+  transition: all 0.25s ease-in-out;
 }
 
 .news-item.active img {
@@ -384,6 +385,7 @@ main {
   display: flex;
   cursor: pointer;
   flex-direction: row;
+  
 }
 
 .rank-item-content {
@@ -463,6 +465,7 @@ main {
 }
 .game-type-item img {
   filter: grayscale(1);
+  transition: all 0.25s ease-in-out;
 }
 .game-type-item.active img {
   filter: grayscale(0);
@@ -719,6 +722,7 @@ main {
   #tentuoilanggame .window-content-mobile .game-item img {
     width: 100%;
     filter: grayscale(1);
+    transition: all 0.25s ease-in-out;
   }
 
   #tentuoilanggame .window-content-mobile .game-item.active img {
