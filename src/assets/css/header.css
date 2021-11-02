@@ -179,6 +179,9 @@ a {
 .dropdown-item {
   background-color: var(--gray-6);
 }
+.dropdown-item.active{
+  background-color: var(--primary-yellow);
+}
 
 .dropdown:hover > .dropdown-menu,
 .dropdown .dropdown-menu:hover {
