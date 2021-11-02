@@ -1,0 +1,209 @@
+main {
+  padding-top: calc(64px + 80px);
+  padding-bottom: 583px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.date-created .desktop {
+  display: inline-block;
+}
+@media screen and (max-width: 550px) {
+  .date-created .desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 810px) {
+  main {
+    padding-top: calc(64px + 32px);
+    padding-bottom: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+footer {
+  background-color: var(--gray-5);
+}
+section {
+  margin: auto;
+}
+#section1 {
+  max-width: 1076px;
+
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 810px) {
+  #section1 {
+    margin-bottom: 24px;
+  }
+}
+
+#section1 img {
+  /* max-width: 100%; */
+  width: calc(100% + 6px);
+  margin-left: -3px;
+  margin-top: -3px;
+  margin-right: -3px;
+  margin-bottom: -3px;
+}
+
+/* -----  */
+#article-section {
+  max-width: 857px;
+  margin: auto;
+}
+
+.article-header {
+}
+
+.theloaigames {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 8px;
+}
+
+.article-title {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 61px;
+  line-height: 79px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+@media screen and (max-width: 810px) {
+  .article-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 51px;
+  }
+}
+
+/* author-info */
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.author-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  display: inline-block;
+}
+
+.author-name {
+  margin-left: 12px;
+  margin-right: 16px;
+}
+
+.author-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.author-social-icon {
+  border: var(--border-default);
+  background-color: var(--primary-green);
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  padding: 1px;
+}
+
+/* BODY */
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.article-intro {
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 810px) {
+  .article-body {
+    gap: 24px;
+  }
+
+  .article-intro {
+    margin-top: 48px;
+  }
+  .article-body .body1 {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.article-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-photo img {
+  width: 100%;
+}
+
+.article-photo .photo-caption {
+  margin-top: 10px;
+}
+
+.article-src {
+  align-self: flex-end;
+}
+
+/*  */
+.tag-related-container {
+  margin: 64px 0px;
+}
+@media screen and (max-width: 810px) {
+  .tag-related-container {
+    margin: 24px 0px;
+  }
+}
+
+.article-same-author ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style-position: inside;
+}
+.article-same-author ul li {
+  padding-left: 12px;
+}
+
+/*  */
+#baiviet-khac {
+  margin-top: 93px;
+}
+
+
+#baiviet-khac .Title {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 810px) {
+    #baiviet-khac {
+      margin-top: 48px;
+    }
+
+    #baiviet-khac .Title {
+        margin-bottom: 32px;
+      }
+  }

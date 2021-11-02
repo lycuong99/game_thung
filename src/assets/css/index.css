@@ -56,7 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-
+  min-height: 496px;
   border: var(--border-default);
 }
 .slick-current .slider-item-wrapper {
@@ -385,7 +385,6 @@ main {
   display: flex;
   cursor: pointer;
   flex-direction: row;
-  
 }
 
 .rank-item-content {
@@ -487,7 +486,7 @@ main {
   max-width: 241px;
   min-width: 186px;
 }
-.game-type-item .content .subtitle1{
+.game-type-item .content .subtitle1 {
   margin-bottom: 12px;
 }
 .game-type-item img.mobile {

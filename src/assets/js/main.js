@@ -28,4 +28,12 @@ $(document).ready(function () {
         nextArrow:
             '<a class="slide-arrow next-arrow"><i class="bi bi-chevron-right"></i></a>',
     });
+
+    $('.news-item, baiviet-item').click(
+        function (e) {
+            // window.open('baivietchitiet.html');
+            window.location.href = 'baivietchitiet.html';
+        }
+    )
+
 })

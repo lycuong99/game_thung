@@ -1,0 +1,448 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/baiviet.css" />
+    <link rel="stylesheet" href="./assets/css/baivietchitiet.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="index.html">
+            <img src="./assets/images/logo01.svg" alt="GameThung Logo"
+          /></a>
+        </div>
+        <nav class="nav-container" id="main-navbar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="noibat.html"><span> Nổi bật </span></a>
+            </li>
+            <li class="nav-item">
+              <a href="baimoi.html"><span>Bài Mới</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle"><span>Thể loại </span></button>
+              <ul class="dropdown-menu first-dropdown">
+                <li class="dropdown-item dropdown">
+                  <span class="dropdown-item-content">
+                    <span>Theo thể loại</span>
+                    <span class="dropdown-item-icon">
+                      <img src="./assets/images/right-chevron.svg" /></span
+                  ></span>
+                  <ul class="dropdown-menu second-dropdown" id="the-loai-menu">
+                    <li class="dropdown-item">
+                      <a href="theloai-hanhdong.html"> Hành động</a>
+                    </li>
+                    <li class="dropdown-item">Bắn súng</li>
+                    <li class="dropdown-item">Chiến lược</li>
+                    <li class="dropdown-item">Nhập vai</li>
+                    <li class="dropdown-item">Đua xe</li>
+                    <li class="dropdown-item">Phiêu lưu</li>
+                  </ul>
+                </li>
+                <li class="dropdown-item dropdown">
+                  <span class="dropdown-item-content">
+                    <span>Theo hệ máy</span>
+                    <span class="dropdown-item-icon"
+                      ><img src="./assets/images/right-chevron.svg"
+                    /></span>
+                  </span>
+                  <ul class="dropdown-menu second-dropdown">
+                    <li class="dropdown-item">XBOX</li>
+                    <li class="dropdown-item">
+                      <a href="theloai-nes.html">Hệ máy NES</a>
+                    </li>
+                    <li class="dropdown-item">Máy tính PC</li>
+                    <li class="dropdown-item">Máy Gameboy</li>
+                    <li class="dropdown-item">Nintendo DS</li>
+                    <li class="dropdown-item">Máy PSP</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="tentuoi.html"><span>Tên tuổi </span></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" style="vertical-align: baseline"
+                ><img src="./assets/images/search-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-container-mobile" id="nav-menu-button">
+          <img src="./assets/images/menu-icon-small.svg" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <section id="section1">
+        <div class="window box-shadow">
+          <div class="window-header">
+            <span class="subtitle1">Magna mauris scelerisque</span>
+            <span> <embed src="assets/images/menu-icon-big-light.svg" /></span>
+          </div>
+          <div class="window-body">
+            <img src="assets/images/baivietchitiet/1.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="article-section">
+        <div class="article-header">
+          <ul class="theloaigames">
+            <li class="theloaigame body2">Chiến lược</li>
+            <li class="theloaigame body2">Thời gian thực</li>
+          </ul>
+
+          <div class="article-title">
+            StarCraft - Ông tổ làng chiến thuật của game thủ Việt Nam
+          </div>
+
+          <div class="author-info">
+            <div class="author-article">
+              <span class="avatar"></span>
+              <span class="subtitle1 author-name">Tuấn Nguyễn</span>
+              <span class="date-created caption2">16/09/2021 <span class="desktop">- 09:30 AM</span></span>
+            </div>
+            <div class="author-socials">
+              <span class="author-social-icon"><a href="#"><embed src="./assets/images/bx_bx-link.svg"></embed></a></span>
+              <span class="author-social-icon"><a href="#"><embed src="./assets/images/bx_bxl-facebook.svg"></embed></a></span>
+            </div>
+          </div>
+        </div>
+        <div class="article-body">
+            <div class="article-intro subtitle2">
+                Tựa game chiến thuật thời gian thực huyền thoại chắc chắn sẽ là cái tên quen thuộc tiếp theo sẽ gợi nhớ anh em về tuổi thơ dữ dội. Starcraft đem lại cảm giác mà những tựa game MOBA hiện nay đem lại cho người chơi, mỗi khi thắng đều muốn chơi tiếp mà mỗi khi thua cũng không thể ngồi yên.
+            </div>
+            <!--  -->
+            <div class="article-photo">
+                <img src="./assets/images/baivietchitiet/2.png" alt="">
+                <div class="photo-caption caption2">
+                    Ảnh bìa StarCraft.
+                </div>
+            </div>
+            <p class="body1">
+                StarCraft là trò chơi điện tử chiến lược thời gian thực loại khoa học quân sự viễn tưởng do Blizzard Entertainment phát triển. Trò chơi đầu tiên của thương hiệu Starcraft được phát hành cho Microsoft Windows vào ngày 31 tháng 3 năm 1998. Với hơn 11 triệu bản bán ra trên toàn thế giới vào tháng 2 năm 2009, nó là một trong những trò chơi bán chạy nhất trên máy tính cá nhân . Một phiên bản cho Mac OS cũng được phát hành vào tháng 3 năm 1999 và một bản cho Nintendo 64 mà Blizzard cộng tác với Mass Media Interactive Entertainment được phát hành vào ngày 13 tháng 6 năm 2000 .
+            </p>
+            <!--  -->
+            <div class="article-photo">
+                <img src="./assets/images/baivietchitiet/3.png" alt="">
+                <div class="photo-caption caption2">
+                    Ảnh bìa StarCraft.
+                </div>
+            </div>
+            <p class="body1">
+                Bối cảnh của trò chơi là thế kỷ 26, xoay quanh cuộc chiến của ba chủng tộc chính để thống trị thiên hà: Terran là người Trái Đất có khả năng sinh tồn cao; Zerg là chủng tộc ngoài hành tinh có hình dáng côn trùng thích chinh phục và đồng hóa những loài khác và Protoss một chủng tộc hình người với công nghệ tiên tiến và khả năng tâm linh. 
+            </p>
+            <!--  -->
+            <div class="article-photo">
+                <img src="./assets/images/baivietchitiet/4.png" alt="">
+                <div class="photo-caption caption2">
+                    Ảnh bìa StarCraft.
+                </div>
+            </div>
+            <p class="body1">
+                Đây cũng là một trong những tựa game có tổ chức các giải đấu mang tầm Quốc Tế đầu tiên, tiên phong cho thể loại game thể thao điện tử. Nhiệm vụ của người chơi là điều khiển, nâng cấp sức mạnh cho đội quân của mình và đi chinh phạt đội quân địch do máy hay người chơi khác điều khiển.
+
+            </p>
+            <!--  -->
+            <div class="article-photo">
+                <img src="./assets/images/baivietchitiet/5.png" alt="">
+                <div class="photo-caption caption2">
+                    Ảnh bìa StarCraft.
+                </div>
+            </div>
+            <p class="article-src subtitle1">
+                Nguồn: Thegioididong.com
+            </p>
+        </div>
+        <div class="tag-related-container">
+          <div class="subtitle1 tag-related-title">#Tags:</div>
+          <ul class="tag-related-list">
+            <li class="body2 tag-related-item">StarCraft</li>
+            <li class="body2 tag-related-item">chiến thuật</li>
+            <li class="body2 tag-related-item">Giải đấu</li>
+          </ul>
+        </div>
+        <div class="article-same-author">
+         
+          <ul>
+            <div class="subtitle1">Cùng tác giả:</div>
+            <li class="label1">
+              Command and Conquer: Red Alert 2 - Game chiến thuật khoa học viễn
+              tưởng nổi tiếng
+            </li>
+            <li class="label1">
+              Total War - Game chiến thuật thời gian thực đầy thú vị
+            </li>
+            <li class="label1">
+              Age of Empires - Game đế chế huyền thoại 1 thời
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="baiviet-khac" class="container">
+        <h4 class="Title"># Bài viết khác</h4>
+        <div class="baiviet-list slider">
+            <!--  -->
+            <div class="baiviet-item window">
+              <div class="window-header">
+                <span class="subtitle1">WarCraft 3</span>
+                <span>
+                  <embed src="assets/images/menu-icon-big-light.svg"
+                /></span>
+              </div>
+              <div class="window-body baiviet-item-content">
+                <div class="image">
+                  <img src="./assets/images/baivietchitiet/baivietkhac/image 27.png" alt="" />
+                </div>
+                <div class="content">
+                  <div class="mobile-h4-xl items-title">
+                    Warcraft 3 - Siêu phẩm game chiến thuật hay nhất cho PC đỉnh cao
+                  </div>
+                  <p class="body2">
+                    Warcraft 3, một trong những tựa game huyền thoại do Blizzard sản xuất. Với phần đồ họa ưa nhìn, âm thanh xuất sắc và hệ thống Hero sở hữu nhiều kỹ năng hấp dẫn, game yêu cầu người chơi đưa ra chiến thuật tinh vi...
+                  </p>
+                  <div class="additional-info">
+                    <span class="theloaigame body2 border"> Chiến thuật </span>
+                    <span class="space"></span>
+                    <div class="date body2">16/09</div>
+                    <div class="time body2">3 phút</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="baiviet-item window">
+              <div class="window-header">
+                <span class="subtitle1">Age of Empire</span>
+                <span>
+                  <embed src="assets/images/menu-icon-big-light.svg"
+                /></span>
+              </div>
+              <div class="window-body baiviet-item-content">
+                <div class="image">
+                    <img src="./assets/images/baivietchitiet/baivietkhac/image 28.png" alt="" />
+                </div>
+                <div class="content">
+                  <div class="mobile-h4-xl items-title">
+                    Age of Empire - Game đế chế chiến thuật huyền thoại một thời
+                  </div>
+                  <p class="body2">
+                    Nếu nói về những tựa game kinh điển có sức sống lâu bền và ngày càng hấp dẫn thì phải kể đến tựa game Age of Empires hay AOE 1 với nội dung chiến thuật chạy dân, nơi bạn thể hiện tài năng điều quân, sắp xếp đội hình của....
+                  </p>
+                  <div class="additional-info">
+                    <span class="theloaigame body2 border"> Chiến thuật</span>
+                    <span class="space"></span>
+                    <div class="date body2">16/09</div>
+                    <div class="time body2">3 phút</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="baiviet-item window">
+              <div class="window-header">
+                <span class="subtitle1">Company of Heroes</span>
+                <!-- <embed src="happy.svg" /> -->
+                <span>
+                  <embed src="assets/images/menu-icon-big-light.svg"
+                /></span>
+              </div>
+              <div class="window-body baiviet-item-content">
+                <div class="image">
+                    <img src="./assets/images/baivietchitiet/baivietkhac/image 29.png" alt="" />
+                </div>
+                <div class="content">
+                  <div class="mobile-h4-xl items-title">
+                    Company of Heroes - Đưa bạn quay về Thế chiến II đầy khốc liệt
+                  </div>
+                  <p class="body2">
+                    Company of Heroes mang đến cho người chơi chiến thuật một luồng gió đầy tươi mới. Lấy bối cảnh Thế Chiến II, bạn sẽ được tham gia vào các chiến trường rực lửa và điều khiển những sư đoàn bộ binh, xe tăng, máy bay…
+                  </p>
+                  <div class="additional-info">
+                    <span class="theloaigame body2 border"> Chiến thuật </span>
+                    <span class="space"></span>
+                    <div class="date body2">16/09</div>
+                    <div class="time body2">3 phút</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logosection">
+          <a href="index.html">
+            <img src="./assets/images/logo02.svg" alt="GameThung Logo"
+          /></a>
+        </div>
+        <div class="information-section">
+          <div class="web-info">
+            <div class="subtitle1">Về trang web này</div>
+            <div class="body2">
+              Đây là một trang web be bé cung cấp những vài viết nho nhỏ về
+              những tựa game kinh điển mà thế hệ 8x - 9x - 10x đã từng chơi qua.
+              Chúng là một phần tuổi thơ ai đó trong số chúng ta mà nhỉ?
+            </div>
+          </div>
+          <div class="group-info">
+            <div class="subtitle1">Về chúng tớ</div>
+            <div class="group-info-content">
+              <div class="label1">Nhombanguoi.</div>
+              <ul class="member-list-info">
+                <li>
+                  <span class="caption1">Design by</span>
+                  <div class="body2">Lộc Nguyễn</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Hoàn Bùi</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Tuấn Nguyễn</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper">
+          <ul>
+            <li class="label1">Điều khoản</li>
+            <li class="label1">Chính sách</li>
+            <li class="label1">Trợ giúp</li>
+          </ul>
+          <p>
+            Trang Web nay chỉ sử dụng cho mục đích học tâp. Bản quyền trang web
+            này thuộc về nhombanguoi. chúng tớ nhá!
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/baiviet.js"></script>
+    <script>
+// $(document).ready(function () {
+
+//     $(window).on('resize', function () {
+
+// if ($(window).width() < 510) {
+//     $('.baiviet-list').slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: false,
+
+//         fade: true,
+//         prevArrow: $('.preBtn'),
+//         nextArrow: $('.nextBtn'),
+//         centerMode: true,
+//         centerPadding: 24,
+//         responsive: [
+//              {
+//                 breakpoint: 5000,
+//                 slidesToShow: 3,
+//                 settings: "unslick"
+//             },
+//             {
+//                 breakpoint: 860,
+//                 settings: {
+//                     fade: false,
+//                     arrows: false,
+//                     slidesToShow: 1,
+//                     slidesToScroll: 1,
+//                     // infinite: true,
+//                     centerMode: true,
+//                     centerPadding: 140,
+//                 }
+//             },
+//             {
+//                 breakpoint: 660,
+//                 settings: {
+//                     fade: false,
+//                     arrows: false,
+//                     slidesToShow: 1,
+//                     slidesToScroll: 1,
+//                     // infinite: true,
+//                     centerMode: true,
+//                     centerPadding: 80,
+//                 }
+//             },
+//             {
+//                 breakpoint: 500,
+//                 settings: {
+//                     fade: false,
+//                     arrows: false,
+//                     slidesToShow: 1,
+//                     slidesToScroll: 1,
+//                     // infinite: true,
+//                 }
+//             },
+//             // {
+//             //     breakpoint: 800,
+//             //     settings: "unslick"
+//             // }
+
+//         ]
+//     });
+// }
+// });
+      
+// })
+    </script>
+  </body>
+</html>

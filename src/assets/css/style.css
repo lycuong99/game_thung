@@ -67,30 +67,30 @@ main {
   font-weight: 600;
   font-family: "IBM Plex Mono", monospace;
   /* letter-spacing: -2%; */
-  color: var(--gray-2);
+  color: var(--gray-1);
   line-height: 26px;
 }
 
 .subtitle2 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 36px;
   font-family: "Work Sans", sans-serif;
-  color: var(--gray-2);
+  color: var(--gray-1);
 }
 .body1 {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
-  color: var(--gray-2);
+  color: var(--gray-1);
 }
 .body2 {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: var(--gray-2);
+  color: var(--gray-1);
 }
 
 /* Label M */
@@ -99,6 +99,7 @@ main {
   font-size: 16px;
   line-height: 21px;
   font-family: "IBM Plex Mono", monospace;
+  color: var(--gray-1);
 }
 /* label L */
 .label2 {
@@ -106,6 +107,7 @@ main {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
+  color: var(--gray-1);
 }
 
 .caption1 {
@@ -115,6 +117,7 @@ main {
   font-size: 13px;
   line-height: 17px;
   letter-spacing: -0.01em;
+  color: var(--gray-1);
 }
 
 .caption2 {
@@ -124,6 +127,7 @@ main {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: -0.02em;
+  color: var(--gray-1);
 }
 
 .container {
