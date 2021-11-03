@@ -1,0 +1,149 @@
+main {
+  padding-top: calc(64px + 72px);
+  padding-bottom: 162px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+footer {
+  background-color: var(--gray-5);
+}
+@media screen and (max-width: 810px) {
+  main {
+    padding-top: calc(64px + 32px);
+    padding-bottom: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.container {
+  margin: auto;
+}
+.form-control {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.input-search {
+  padding: 8px 16px;
+  background-color: var(--gray-6);
+  flex: 1;
+  margin-right: -3px;
+  min-width: 100px;
+}
+
+.input-search::placeholder {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--gray-4);
+}
+
+.container > .window > .window-body {
+  padding: 72px 32px 64px;
+}
+@media screen and (max-width: 810px) {
+  .container > .window > .window-body {
+    padding: 48px 12px;
+  }
+}
+
+.sort-btn {
+  border: var(--border-default);
+  background-color: var(--gray-6);
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 16px;
+}
+.sort-btn .icon {
+  transform: rotate(180deg);
+  transition: all 0.25s ease-in;
+}
+/* .sort-btn:hover .icon {
+  transform: rotate(0deg);
+} */
+.dropdown ul {
+  list-style: none;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.search-result .dropdown-menu {
+  width: 100%;
+  position: absolute;
+}
+.search-result .dropdown-menu .dropdown-item {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 8px 16px;
+}
+.search-result .dropdown-menu .dropdown-item:first-child {
+  margin-top: -3px;
+}
+
+.toolbar .title-header {
+  font-family: "IBM Plex Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 810px) {
+  .toolbar .title-header {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+/* font-family: Work Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+ */
+
+.not-found-text {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: inline-block;
+}
+@media screen and (max-width: 810px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  #searchBtn {
+    padding: 8px;
+  }
+}

@@ -113,7 +113,7 @@
             </li>
 
             <li class="nav-item">
-              <a href="#" style="vertical-align: baseline"
+              <a href="timkiem.html" style="vertical-align: baseline"
                 ><img src="./assets/images/search-icon.svg"
               /></a>
             </li>
@@ -365,7 +365,7 @@
           <ul>
             <li class="label1">Điều khoản</li>
             <li class="label1">Chính sách</li>
-            <li class="label1">Trợ giúp</li>
+            <li class="label1" id="btnModal">Trợ giúp</li>
           </ul>
           <p>
             Trang Web nay chỉ sử dụng cho mục đích học tâp. Bản quyền trang web
@@ -373,76 +373,34 @@
           </p>
         </div>
       </div>
-    </footer>
+        </footer><!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+
+      <div class="window box-shadow modal-content">
+        <div class="window-header">
+          <span class="subtitle1">Trung tâm xử lý</span>
+          <span> <embed src="assets/images/menu-icon-big-light.svg" /></span>
+        </div>
+        <div class="window-body">
+          <div class="qr-container">
+            <img src="./assets/images/qr-code.png" />
+            <div class="qr-content">
+              <embed src="./assets/images/modal-icon.svg" />
+              <p class="caption0-S">
+                Nếu cậu có bất kì thắc mắc gì, hãy liên hệ bằng cách quét mã
+                code này nhé :>
+              </p>
+            </div>
+          </div>
+
+          <button class="btn btnP" id="closeModal" >
+            Cùng khám phá tiếp nào
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/baiviet.js"></script>
-    <script>
-// $(document).ready(function () {
-
-//     $(window).on('resize', function () {
-
-// if ($(window).width() < 510) {
-//     $('.baiviet-list').slick({
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         infinite: false,
-
-//         fade: true,
-//         prevArrow: $('.preBtn'),
-//         nextArrow: $('.nextBtn'),
-//         centerMode: true,
-//         centerPadding: 24,
-//         responsive: [
-//              {
-//                 breakpoint: 5000,
-//                 slidesToShow: 3,
-//                 settings: "unslick"
-//             },
-//             {
-//                 breakpoint: 860,
-//                 settings: {
-//                     fade: false,
-//                     arrows: false,
-//                     slidesToShow: 1,
-//                     slidesToScroll: 1,
-//                     // infinite: true,
-//                     centerMode: true,
-//                     centerPadding: 140,
-//                 }
-//             },
-//             {
-//                 breakpoint: 660,
-//                 settings: {
-//                     fade: false,
-//                     arrows: false,
-//                     slidesToShow: 1,
-//                     slidesToScroll: 1,
-//                     // infinite: true,
-//                     centerMode: true,
-//                     centerPadding: 80,
-//                 }
-//             },
-//             {
-//                 breakpoint: 500,
-//                 settings: {
-//                     fade: false,
-//                     arrows: false,
-//                     slidesToShow: 1,
-//                     slidesToScroll: 1,
-//                     // infinite: true,
-//                 }
-//             },
-//             // {
-//             //     breakpoint: 800,
-//             //     settings: "unslick"
-//             // }
-
-//         ]
-//     });
-// }
-// });
-      
-// })
-    </script>
   </body>
 </html>

@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    $('.slider-content').on('afterChange', function (event, slick, currentSlide) {
+        console.log(currentSlide);
+        $('.slider-nav button').removeClass('active');
+        $(`.slider-nav button[data-slide=${currentSlide + 1}]`).addClass('active');
+    });
+
     $('.slider-content').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -71,6 +77,9 @@ $(document).ready(function () {
         ]
     });
 
+
+
+
     $('.slider-nav button[data-slide]').click(function (e) {
         // e.preventDefault();
         var slideno = $(this).data('slide');
@@ -123,7 +132,7 @@ $(document).ready(function () {
         $(this).removeClass('active');
     });
 
-    
+
 
 
     // $('.slick-prev').html(`<img src="assets/images/left-arrow.svg" />`);

@@ -272,3 +272,102 @@ body {
 .tag-related-item:active {
   box-shadow: inset 6px 4px 0px #2e2d2c;
 }
+
+.hidden {
+  display: none;
+}
+/* MODAL */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding: 0 12px;
+  padding-top: 64px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(33, 33, 32, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto 0; /* 15% from the top and centered */
+  /* padding: 20px; */
+  max-width: 856px;
+}
+.modal-content .window-body {
+  padding: 64px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caption0-S {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--gray-1);
+}
+.qr-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+.qr-container img {
+  height: 200px;
+  width: 200px;
+}
+.qr-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.qr-content embed {
+  max-width: 385px;
+  width: 100%;
+  height: 65px;
+}
+
+@media screen and (max-width: 810px) {
+  .modal-content .window-body {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .qr-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .qr-content {
+    padding: 0;
+    gap: 16px;
+  }
+  .modal-content .btn {
+    padding: 12px 24px;
+  }
+
+  .qr-content embed {
+    max-width: 216px;
+    width: 100%;
+    height: 65px;
+  }
+}
+
+#btnModal{
+  cursor: pointer;
+}

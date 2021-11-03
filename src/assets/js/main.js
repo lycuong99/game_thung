@@ -19,21 +19,34 @@ $(document).ready(function () {
         }
     });
 
-    $("#home_slider").slick({
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow:
-            '<a class="slide-arrow prev-arrow"><i class="bi bi-chevron-left"></i></a>',
-        nextArrow:
-            '<a class="slide-arrow next-arrow"><i class="bi bi-chevron-right"></i></a>',
-    });
-
     $('.news-item, baiviet-item').click(
         function (e) {
             // window.open('baivietchitiet.html');
             window.location.href = 'baivietchitiet.html';
         }
     )
+
+    // MODAL
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnModal");
+    var btnClose = document.getElementById("closeModal");
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    btnClose.onclick = function () {
+        modal.style.display = "none";
+    }
 
 })

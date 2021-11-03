@@ -1,0 +1,413 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/baiviet.css" />
+    <link rel="stylesheet" href="./assets/css/timkiem.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="index.html">
+            <img src="./assets/images/logo01.svg" alt="GameThung Logo"
+          /></a>
+        </div>
+        <nav class="nav-container" id="main-navbar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="noibat.html"><span> Nổi bật </span></a>
+            </li>
+            <li class="nav-item">
+              <a href="baimoi.html"><span>Bài Mới</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle"><span>Thể loại </span></button>
+              <ul class="dropdown-menu first-dropdown">
+                <li class="dropdown-item dropdown">
+                  <span class="dropdown-item-content">
+                    <span>Theo thể loại</span>
+                    <span class="dropdown-item-icon">
+                      <img src="./assets/images/right-chevron.svg" /></span
+                  ></span>
+                  <ul class="dropdown-menu second-dropdown" id="the-loai-menu">
+                    <li class="dropdown-item">
+                      <a href="theloai-hanhdong.html"> Hành động</a>
+                    </li>
+                    <li class="dropdown-item">Bắn súng</li>
+                    <li class="dropdown-item">Chiến lược</li>
+                    <li class="dropdown-item">Nhập vai</li>
+                    <li class="dropdown-item">Đua xe</li>
+                    <li class="dropdown-item">Phiêu lưu</li>
+                  </ul>
+                </li>
+                <li class="dropdown-item dropdown">
+                  <span class="dropdown-item-content">
+                    <span>Theo hệ máy</span>
+                    <span class="dropdown-item-icon"
+                      ><img src="./assets/images/right-chevron.svg"
+                    /></span>
+                  </span>
+                  <ul class="dropdown-menu second-dropdown">
+                    <li class="dropdown-item">XBOX</li>
+                    <li class="dropdown-item">
+                      <a href="theloai-nes.html">Hệ máy NES</a>
+                    </li>
+                    <li class="dropdown-item">Máy tính PC</li>
+                    <li class="dropdown-item">Máy Gameboy</li>
+                    <li class="dropdown-item">Nintendo DS</li>
+                    <li class="dropdown-item">Máy PSP</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="tentuoi.html"><span>Tên tuổi </span></a>
+            </li>
+
+            <li class="nav-item active">
+              <a href="timkiem.html" style="vertical-align: baseline"
+                ><img src="./assets/images/search-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-container-mobile" id="nav-menu-button">
+          <img src="./assets/images/menu-icon-small.svg" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="window box-shadow">
+          <div class="window-header">
+            <span class="subtitle1">Công cụ tìm kiếm</span>
+            <span> <embed src="assets/images/menu-icon-big-light.svg" /></span>
+          </div>
+          <div class="window-body">
+            <div class="form-control">
+              <input
+                type="text"
+                name="keySearch"
+                class="subtitle1 input-search border"
+                placeholder="Nhập từ khóa cần kiếm"
+              />
+              <button class="btn btnP border" name="submit" id="searchBtn">
+                <span class="desktop"> Tìm ngay </span>
+                <span class="mobile">
+                  <img src="./assets/images/search-icon.svg" />
+                </span>
+              </button>
+            </div>
+            <div class="search-result">
+              <div class="hidden" id="result-found">
+                <div class="baiviet-container">
+                  <div class="toolbar">
+                    <span class="result-summary title-header">
+                      5 kết quả - “Bắn súng”:
+                    </span>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle sort-btn">
+                        <span class="label1">Mới nhất</span>
+                        <span class="icon">
+                          <embed src="./assets/images/chervon-up.svg"
+                        /></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item label1">Mới nhất</li>
+                        <li class="dropdown-item label1">Cũ nhất</li>
+                        <li class="dropdown-item label1">A-Z</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="baiviet-list">
+                    <!--  -->
+                    <div class="baiviet-item window">
+                      <div class="window-body baiviet-item-content">
+                        <div class="image">
+                          <img src="./assets/images/timkiem/1.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <div class="mobile-h4-xl items-title">
+                            Beach Head - Tựu game bắn súng cấu hình thấp siêu
+                            kinh điển
+                          </div>
+                          <p class="body2">
+                            Có lẽ là tựa game đầu đời của rất nhiều người, bên
+                            cạnh gameplay khá đơn giản, ngồi một góc rồi bắn
+                            xung quanh, game cũng rất nhẹ...
+                          </p>
+                          <div class="additional-info">
+                            <span class="theloaigame body2 border">
+                              Bắn súng
+                            </span>
+                            <span class="space"></span>
+                            <div class="date body2">16/09</div>
+                            <div class="time body2">3 phút</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="baiviet-item window">
+                      <div class="window-body baiviet-item-content">
+                        <div class="image">
+                          <img src="./assets/images/timkiem/2.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <div class="mobile-h4-xl items-title">
+                            Alien Shooter – Game bắn súng diệt quái vật ngoài
+                            hành tinh
+                          </div>
+                          <p class="body2">
+                            Alien Shooter là phiên b ản đầu tiên của loạt game
+                            hành động bắn súng nổi tiếng. Nhiệm vụ của người
+                            chơi là tiêu diệt quái vật...
+                          </p>
+                          <div class="additional-info">
+                            <span class="theloaigame body2 border">
+                              Hành động</span
+                            >
+                            <span class="space"></span>
+                            <div class="date body2">16/09</div>
+                            <div class="time body2">3 phút</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="baiviet-item window">
+                      <div class="window-body baiviet-item-content">
+                        <div class="image">
+                          <img src="./assets/images/timkiem/3.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <div class="mobile-h4-xl items-title">
+                            Counter-Strike - Tượng đài bắn súng bất diệt của
+                            game thủ Việt
+                          </div>
+                          <p class="body2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Vulputate elementum duis nisl tempus,
+                            sollicitudin.
+                          </p>
+                          <div class="additional-info">
+                            <span class="theloaigame body2 border">
+                              Bắn súng
+                            </span>
+                            <span class="space"></span>
+                            <div class="date body2">16/09</div>
+                            <div class="time body2">3 phút</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+
+                    <div class="baiviet-item window">
+                      <div class="window-body baiviet-item-content">
+                        <div class="image">
+                          <img src="./assets/images/timkiem/4.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <div class="mobile-h4-xl items-title">
+                            Contra - tựa game bắn súng kinh điển với lối chơi cổ
+                            điển
+                          </div>
+                          <p class="body2">
+                            Contra là tựa game bắn súng kinh điển ra đời khá lâu
+                            và đã từng được chơi trên máy Nitendo "bốn nút"
+                            huyền thoại, với cách chơi...
+                          </p>
+                          <div class="additional-info">
+                            <span class="theloaigame body2 border">
+                              Hành động
+                            </span>
+                            <span class="space"></span>
+                            <div class="date body2">16/09</div>
+                            <div class="time body2">3 phút</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="baiviet-item window">
+                      <div class="window-body baiviet-item-content">
+                        <div class="image">
+                          <img src="./assets/images/timkiem/5.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <div class="mobile-h4-xl items-title">
+                            Call of Duty - Bom tấn bắn súng trên máy tính và các hệ máy chơi game
+                          </div>
+                          <p class="body2">
+                            Đây là phiên bản Call of Duty đầu tiên hay còn gọi
+                            là Call of Duty 1, game tái hiện chân thực chiến
+                            trường trong Thế chiến thứ II...
+                          </p>
+                          <div class="additional-info">
+                            <span class="theloaigame body2 border">
+                              Bắn súng
+                            </span>
+                            <span class="space"></span>
+                            <div class="date body2">16/09</div>
+                            <div class="time body2">3 phút</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+              <div id="result-not-found" class="hidden">
+                <div class="toolbar">
+                  <span class="result-summary title-header">
+                    5 kết quả - “Bắn súng”:
+                  </span>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle sort-btn">
+                      <span class="label1">Mới nhất</span>
+                      <span class="icon">
+                        <embed src="./assets/images/chervon-up.svg"
+                      /></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item label1">Mới nhất</li>
+                      <li class="dropdown-item label1">Cũ nhất</li>
+                      <li class="dropdown-item label1">A-Z</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="not-found-text">
+                  <span>Không có kết quả nào nè :&lt;</span>
+                  <br />
+                  <span>Thử một từ khóa khác bạn nhé >.&lt;</span>
+                </div>
+              </div>
+            </div>
+            <div class="tag-related-container" id="result-init">
+              <div class="subtitle1 tag-related-title">
+                Hoặc tìm nhập theo tag sẽ dễ hơn
+              </div>
+              <ul class="tag-related-list">
+                <li class="body2 tag-related-item">Hành động</li>
+                <li class="body2 tag-related-item">FPS</li>
+                <li class="body2 tag-related-item">Đối kháng</li>
+                <li class="body2 tag-related-item">Platform</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logosection">
+          <a href="index.html">
+            <img src="./assets/images/logo02.svg" alt="GameThung Logo"
+          /></a>
+        </div>
+        <div class="information-section">
+          <div class="web-info">
+            <div class="subtitle1">Về trang web này</div>
+            <div class="body2">
+              Đây là một trang web be bé cung cấp những vài viết nho nhỏ về
+              những tựa game kinh điển mà thế hệ 8x - 9x - 10x đã từng chơi qua.
+              Chúng là một phần tuổi thơ ai đó trong số chúng ta mà nhỉ?
+            </div>
+          </div>
+          <div class="group-info">
+            <div class="subtitle1">Về chúng tớ</div>
+            <div class="group-info-content">
+              <div class="label1">Nhombanguoi.</div>
+              <ul class="member-list-info">
+                <li>
+                  <span class="caption1">Design by</span>
+                  <div class="body2">Lộc Nguyễn</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Hoàn Bùi</div>
+                </li>
+                <li>
+                  <span class="caption1">Code by</span>
+                  <div class="body2">Tuấn Nguyễn</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper">
+          <ul>
+            <li class="label1">Điều khoản</li>
+            <li class="label1">Chính sách</li>
+            <li class="label1" id="btnModal">Trợ giúp</li>
+          </ul>
+          <p>
+            Trang Web nay chỉ sử dụng cho mục đích học tâp. Bản quyền trang web
+            này thuộc về nhombanguoi. chúng tớ nhá!
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+
+      <div class="window box-shadow modal-content">
+        <div class="window-header">
+          <span class="subtitle1">Trung tâm xử lý</span>
+          <span> <embed src="assets/images/menu-icon-big-light.svg" /></span>
+        </div>
+        <div class="window-body">
+          <div class="qr-container">
+            <img src="./assets/images/qr-code.png" />
+            <div class="qr-content">
+              <embed src="./assets/images/modal-icon.svg" />
+              <p class="caption0-S">
+                Nếu cậu có bất kì thắc mắc gì, hãy liên hệ bằng cách quét mã
+                code này nhé :>
+              </p>
+            </div>
+          </div>
+
+          <button class="btn btnP" id="closeModal">
+            Cùng khám phá tiếp nào
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/baiviet.js"></script>
+    <script src="./assets/js/timkiem.js"></script>
+  </body>
+</html>
