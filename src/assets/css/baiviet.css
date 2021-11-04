@@ -71,9 +71,12 @@
 .baiviet-item.active {
   box-shadow: var(--box-shadow-default);
   transition: all 0.25s ease-in-out;
+  background-color: coral;
+  background-color: var(--secondary-yellow-light1);
 }
 
 .baiviet-item.active .content {
+  transition: all 0.25s ease-in-out;
   background-color: var(--secondary-yellow-light1);
 }
 
